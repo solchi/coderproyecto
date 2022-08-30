@@ -1,6 +1,4 @@
 *{
-    margin: 0;
-    padding: 0;
     background-color: white;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -9,15 +7,15 @@
 
 
 
-
 /*CABECERA*/
 
 a {
     text-decoration: none;
-    background-color: black;
+    background-color: rgb(83, 83, 83);
     color: white;
     padding: 1vh;
     font-size: 1.5vh;
+
 
 }
 /*
@@ -65,7 +63,7 @@ a {
     width: 100%;
     display: flex;
 	position: fixed;
-    background-color: black;
+    background-color: transparent;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
