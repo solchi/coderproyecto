@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js_script(document.currentScript); }/*FB_PKG_DELIM*/
+
+__d("LSLogEventAnnotate.re",["LSLogEventAnnotate.bs","bs_curry"],function(a,b,c,d,e,f){a=function(a){a=b("bs_curry")._6(b("LSLogEventAnnotate.bs").call,a.transaction_,a.runmode_,a.logCategory,a.logEventId,a.logEventInstanceId,a.annotations);return a};f.call=a},null,self.document&&document.currentScript);
+__d("LSLogEventAnnotate.nop",["LSLogEventAnnotate.re"],function(a,b,c,d,e,f,g){"use strict";a=function(a,b,c,e,f,g){return d("LSLogEventAnnotate.re").call({annotations:g,logCategory:c,logEventId:e,logEventInstanceId:f,runmode_:b,transaction_:a})};g["default"]=a},98,self.document&&document.currentScript);
