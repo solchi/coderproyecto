@@ -5,12 +5,130 @@
 
 }
 
+html{
+    height: 100%;
+    width: 100%;
+}
 
 
 body{
     margin: 0;
+    min-height: 100%;
 
 }
+.bodyR > *{
+margin: 0;
+min-height: 100%;
+box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.80);
+border-radius: 4px;
+padding: 10px;
+text-align: center;
+}
+
+
+form p{
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    padding: 5px 5px;
+}
+
+form{
+    background-color: white;
+    color: white;
+    padding: 10px;
+    margin: 8px auto;
+    width: 90%;
+    font-size: 20px;
+    background: transparent;
+
+}
+
+form button{
+    font-size: 15px;
+}
+.form{
+    border: solid 1px black;
+    color: white;
+    padding: 10px ;
+    width: 50%;
+    background: white;
+    border: white;
+}
+
+
+
+input textarea{
+    outline: none;
+    border: 0;
+
+}
+
+.bodyR{
+    display: grid;
+    gap: 10px;
+
+    grid-template: 
+    "header " 
+    "nav " 850px
+    "aside " 250px
+    "article";
+}
+
+@media (min-width: 600px){
+    .bodyR{
+        grid-template: 
+        "header header" 360px
+        "nav aside" 
+        "article article";
+    }
+}
+
+@media (min-width: 720px){
+    .bodyR{
+        grid-template: 
+        "header header" 150px
+        "nav aside" 
+        "article article";
+    }
+}
+
+
+
+
+.headerR{
+    grid-area: header;
+    background-color: rgb(250, 250, 250);
+}
+
+.navR{
+    grid-area: nav;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    ) 
+    ,url(../images/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.asideR{
+    grid-area: aside;
+    background-color: chartreuse;
+}
+
+.articleR {
+    grid-area: article;
+    background-color: cornflowerblue;
+
+}
+
+
+
+
+
 
 
 button{
@@ -123,7 +241,7 @@ header a:hover{
     }
 }
 
-
+/*
 .contenedor{
     width: 100%;
     height: 80%;
@@ -164,7 +282,7 @@ header a:hover{
     padding: 15px;
     text-align: center;
 }
-
+*/
 h2{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -234,6 +352,11 @@ footer {
   
 }
 
+
+
+
+
+/*
 .act{
     background-color: aqua;
     color: black;
